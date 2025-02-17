@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .bottom-right {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="container pt-5">
@@ -25,5 +32,13 @@
             {% endfor %}
         </div>
         </div>
+        <div class="bottom-right">
+            <button class = "btn btn-success" onClick= "goBack()">Back</button>
+        </div>
+        <script>
+            function goBack(){
+                window.history.back();
+            }
+        </script>
     </body>
     </html>
