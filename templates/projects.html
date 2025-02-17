@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container pt-5">
+        <h2 class="fs-2">My Projects</h2>
+        <div class="row">
+            {% for project in projects %}
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;"><u>{{ project.title }}</u></h5>
+                        <p class="card-text">{{ project.description }}</p>
+                        <p><strong>Software Used:</strong> {{ project.tech }}</p>
+                       
+                        <a href="{{ project.link }}" class="btn btn-success" target="_blank" onclick="window.location.href=this.href;">View Project</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        </div>
+    </body>
+    </html>
