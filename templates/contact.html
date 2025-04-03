@@ -14,7 +14,7 @@
         :root {
             --primary-color: #111111;
             --secondary-color: #27ae60; /* Green */
-            --text-color: #ffffff;
+            --text-color: rgb(255, 255, 255) !important;
             --card-text: #ffffff; /* Bright white for all text */
             --dark-green: #219653;
             --light-green: #6FCF97;
@@ -145,6 +145,7 @@
         
         .card-body {
             padding: 1.5rem;
+            
         }
         
         .card-text {
@@ -162,15 +163,18 @@
         .contact-info {
             font-size: 1.2rem;
             margin-bottom: 10px;
+            opacity: 1 !important;
         }
         
         .contact-link {
             color: var(--text-color);
             text-decoration: none;
+            opacity: 1 !important;
+            font-weight: 500 !important;
+            text-shadow: none !important;
             transition: color 0.3s ease;
             display: inline-block;
             position: relative;
-            font-weight: 500;
         }
         
         .contact-link::after {
@@ -377,7 +381,7 @@
             <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="card h-100 text-center p-5">
                     <i class="fas fa-envelope contact-icon"></i>
-                    <h3 class="mb-4">Email</h3>
+                    <h3 class="mb-4" style="color: #ffffff !important;">Email</h3>
                     <p class="contact-info">
                         <a href="mailto:bradensmelser@yahoo.com" class="contact-link">bradensmelser@yahoo.com</a>
                     </p>
@@ -388,7 +392,7 @@
             <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="card h-100 text-center p-5">
                     <i class="fas fa-phone-alt contact-icon"></i>
-                    <h3 class="mb-4">Phone</h3>
+                    <h3 class="mb-4" style="color: #ffffff !important;">Phone</h3>
                     <p class="contact-info">
                         <a href="tel:6613128538" class="contact-link">(661) 312-8538</a>
                     </p>
