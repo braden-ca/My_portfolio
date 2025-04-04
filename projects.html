@@ -357,20 +357,20 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/">BRADEN SMELSER</a>
+            <a class="navbar-brand" href="index.html">BRADEN SMELSER</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">About</a>
+                        <a class="nav-link" href="index.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/projects">Projects</a>
+                        <a class="nav-link active" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -388,37 +388,99 @@
     <!-- Projects Section -->
     <div class="container">
         <div class="row">
-            {% for project in projects %}
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="{{ loop.index * 100 }}">
+            <!-- Project 1 -->
+            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="card project-card h-100">
-                    {% if project.image %}
-                    <img src="{{ project.image }}" class="project-img" alt="{{ project.title }}">
-                    {% else %}
-                    <img src="https://via.placeholder.com/800x400?text=Project+Image" class="project-img" alt="{{ project.title }}">
-                    {% endif %}
+                    <img src="static/images/real-estate.jpg" class="project-img" alt="SpareChange - Real Estate App">
                     <div class="card-body">
-                        <h3 class="card-title">{{ project.title }}</h3>
-                        <p class="card-text">{{ project.description }}</p>
+                        <h3 class="card-title">SpareChange - Real Estate App</h3>
+                        <p class="card-text">A modern real estate platform with an integrated mortgage calculator, built using Flask and Firebase. This application allows users to browse properties, calculate mortgage options, and save favorite listings.</p>
                         <div class="mb-3">
-                            {% for tech in project.tech.split(', ') %}
-                            <span class="badge-tech">{{ tech }}</span>
-                            {% endfor %}
+                            <span class="badge-tech">Flask</span>
+                            <span class="badge-tech">Python</span>
+                            <span class="badge-tech">Firebase</span>
+                            <span class="badge-tech">SQLite</span>
+                            <span class="badge-tech">JavaScript</span>
                         </div>
                     </div>
                     <div class="card-footer">
-                        <a href="{{ project.link }}" class="btn btn-custom" target="_blank">
+                        <a href="https://solaire.cs.csub.edu/gitlab/sparechange/sparechange/-/tree/main/backend?ref_type=heads" class="btn btn-custom" target="_blank">
                             <i class="fas fa-external-link-alt me-2"></i>View Project
                         </a>
                     </div>
                 </div>
             </div>
-            {% endfor %}
+            
+            <!-- Project 2 -->
+            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card project-card h-100">
+                    <img src="static/images/game.jpg" class="project-img" alt="GoldRushLite - Game">
+                    <div class="card-body">
+                        <h3 class="card-title">GoldRushLite - Game</h3>
+                        <p class="card-text">An interactive 2D game developed in C using Windows X11 graphics library. Features include a game timer, score counter, and realistic collision mechanics for an engaging player experience.</p>
+                        <div class="mb-3">
+                            <span class="badge-tech">C</span>
+                            <span class="badge-tech">X11</span>
+                            <span class="badge-tech">Graphics Programming</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/braden-ca/Goldrush-Lite" class="btn btn-custom" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i>View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card project-card h-100">
+                    <img src="static/images/social-media.jpg" class="project-img" alt="Social Media Platform">
+                    <div class="card-body">
+                        <h3 class="card-title">Social Media Platform</h3>
+                        <p class="card-text">A full-featured social media application with user authentication, post creation, commenting, and profile management. Developed with a responsive design for cross-platform compatibility.</p>
+                        <div class="mb-3">
+                            <span class="badge-tech">HTML/CSS</span>
+                            <span class="badge-tech">JavaScript</span>
+                            <span class="badge-tech">Python</span>
+                            <span class="badge-tech">Database</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-custom" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i>View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card project-card h-100">
+                    <img src="static/images/portfolio.jpg" class="project-img" alt="Portfolio Website">
+                    <div class="card-body">
+                        <h3 class="card-title">Portfolio Website</h3>
+                        <p class="card-text">A personal portfolio website showcasing my projects and skills. Built with responsive design and modern web technologies, featuring smooth animations and a clean user interface.</p>
+                        <div class="mb-3">
+                            <span class="badge-tech">HTML/CSS</span>
+                            <span class="badge-tech">Bootstrap</span>
+                            <span class="badge-tech">JavaScript</span>
+                            <span class="badge-tech">Flask</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-custom" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i>View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Back Button -->
     <div class="container text-center mt-4 mb-5">
-        <a href="/" class="btn btn-custom" data-aos="fade-up">
+        <a href="index.html" class="btn btn-custom" data-aos="fade-up">
             <i class="fas fa-arrow-left me-2"></i>Back to Home
         </a>
     </div>
