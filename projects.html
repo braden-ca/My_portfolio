@@ -341,6 +341,14 @@
             font-weight: 400;
             letter-spacing: 0.01em;
         }
+
+        .project-img-placeholder {
+    height: 200px;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+        }
+
     </style>
 </head>
 <body>
@@ -391,7 +399,12 @@
             <!-- Project 1 -->
             <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="card project-card h-100">
-                    <img src="static/images/real-estate.jpg" class="project-img" alt="SpareChange - Real Estate App">
+                    <div class="project-img-placeholder d-flex justify-content-center align-items-center bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-home fa-3x text-secondary mb-2"></i>
+                            <p class="text-muted mb-0">Real Estate App</p>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">SpareChange - Real Estate App</h3>
                         <p class="card-text">A modern real estate platform with an integrated mortgage calculator, built using Flask and Firebase. This application allows users to browse properties, calculate mortgage options, and save favorite listings.</p>
@@ -404,9 +417,9 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <a href="https://solaire.cs.csub.edu/gitlab/sparechange/sparechange/-/tree/main/backend?ref_type=heads" class="btn btn-custom" target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i>View Project
-                        </a>
+                        <button class="btn btn-custom" disabled>
+                            <i class="fas fa-lock me-2"></i>Viewing Permissions Off
+                        </button>
                     </div>
                 </div>
             </div>
@@ -414,7 +427,12 @@
             <!-- Project 2 -->
             <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="card project-card h-100">
-                    <img src="static/images/game.jpg" class="project-img" alt="GoldRushLite - Game">
+                    <div class="project-img-placeholder d-flex justify-content-center align-items-center bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-gamepad fa-3x text-secondary mb-2"></i>
+                            <p class="text-muted mb-0">GoldRushLite Game</p>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <h3 class="card-title">GoldRushLite - Game</h3>
                         <p class="card-text">An interactive 2D game developed in C using Windows X11 graphics library. Features include a game timer, score counter, and realistic collision mechanics for an engaging player experience.</p>
@@ -432,32 +450,16 @@
                 </div>
             </div>
             
+
             <!-- Project 3 -->
             <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="card project-card h-100">
-                    <img src="static/images/social-media.jpg" class="project-img" alt="Social Media Platform">
-                    <div class="card-body">
-                        <h3 class="card-title">Social Media Platform</h3>
-                        <p class="card-text">A full-featured social media application with user authentication, post creation, commenting, and profile management. Developed with a responsive design for cross-platform compatibility.</p>
-                        <div class="mb-3">
-                            <span class="badge-tech">HTML/CSS</span>
-                            <span class="badge-tech">JavaScript</span>
-                            <span class="badge-tech">Python</span>
-                            <span class="badge-tech">Database</span>
+                    <div class="project-img-placeholder d-flex justify-content-center align-items-center bg-light">
+                        <div class="text-center">
+                            <i class="fas fa-laptop-code fa-3x text-secondary mb-2"></i>
+                            <p class="text-muted mb-0">Portfolio Website</p>
                         </div>
                     </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-custom" target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i>View Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 4 -->
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="card project-card h-100">
-                    <img src="static/images/portfolio.jpg" class="project-img" alt="Portfolio Website">
                     <div class="card-body">
                         <h3 class="card-title">Portfolio Website</h3>
                         <p class="card-text">A personal portfolio website showcasing my projects and skills. Built with responsive design and modern web technologies, featuring smooth animations and a clean user interface.</p>
