@@ -308,11 +308,10 @@
         }
         
         .project-card .card-title {
-            color: #212529 !important; /* Dark text color with !important to override */
+            color: var(--secondary-color);
             margin-bottom: 1.2rem;
             position: relative;
             font-size: 1.6rem;
-            font-weight: 600;
         }
         
         .project-card .card-title::after {
@@ -352,14 +351,28 @@
 
         .card-title {
     color: #212529; 
-    font-weight: 600; 
+    font-weight: 600; /* Make it slightly bolder for better visibility */
 }
 
 .btn.btn-custom i.fas.fa-lock,
 .btn.btn-custom[disabled] {
-    color: #212529 !important;
+    color: #212529 !important; /* Using !important to ensure it overrides any existing styles */
 }
- 
+
+.project-img-placeholder .text-secondary {
+    color: #111111 !important; /* Dark text for the icons */
+}
+
+.project-img-placeholder .text-muted {
+    color: #111111 !important; /* Dark text for the placeholder text */
+}
+
+/* Keep the "Viewing permissions off" text in neon green */
+.btn.btn-custom i.fas.fa-lock,
+.btn.btn-custom[disabled] {
+    color: var(--secondary-color) !important; /* Using the neon green color variable */
+}
+
     </style>
 </head>
 <body>
