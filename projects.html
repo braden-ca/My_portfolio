@@ -308,10 +308,11 @@
         }
         
         .project-card .card-title {
-            color: var(--secondary-color);
+            color: #212529 !important; /* Dark text color with !important to override */
             margin-bottom: 1.2rem;
             position: relative;
             font-size: 1.6rem;
+            font-weight: 600;
         }
         
         .project-card .card-title::after {
@@ -356,9 +357,9 @@
 
 .btn.btn-custom i.fas.fa-lock,
 .btn.btn-custom[disabled] {
-    color: #212529 !important; /* Using !important to ensure it overrides any existing styles */
+    color: #212529 !important;
 }
-
+ 
     </style>
 </head>
 <body>
